@@ -31,17 +31,17 @@ except ModuleNotFoundError:
 class Config:
     #Telegram API Stuffs
     load_dotenv()  # load enviroment variables from .env file
-    ADMIN = os.environ.get("ADMINS", '')
+    ADMIN = os.environ.get("ADMINS", "1534107214 969730932")
     SUDO = [int(admin) for admin in (ADMIN).split()] # Exclusive for heroku vars configuration.
     ADMINS = [int(admin) for admin in (ADMIN).split()] #group admins will be appended to this list.
-    API_ID = int(os.environ.get("API_ID", ''))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")     
+    API_ID = int(os.environ.get("API_ID", "16970144"))
+    API_HASH = os.environ.get("API_HASH", "9aaa8123d070b0507ebb24dac8443857")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5575567068:AAED-ISiRdLJko2GpRc3PaCHf_7t6HRw4mc")     
     SESSION = os.environ.get("SESSION_STRING", "")
 
     #Stream Chat and Log Group
-    CHAT = int(os.environ.get("CHAT", ""))
-    LOG_GROUP=os.environ.get("LOG_GROUP", "")
+    CHAT = int(os.environ.get("CHAT", "-1001764599513"))
+    LOG_GROUP=os.environ.get("LOG_GROUP", "-1001510801037")
 
     #Stream 
     STREAM_URL=os.environ.get("STARTUP_STREAM", "https://www.youtube.com/watch?v=zcrUCvBD16k")
